@@ -12,7 +12,7 @@ with h5py.File(filename, "r") as f:
     locations = f["tracks"][:].T  # Ensure correct shape after transposition
     node_names = [n.decode() for n in f["node_names"][:]]
 
-# Check data structure
+# Check data structur
 print("===filename===")
 print(filename)
 print()
